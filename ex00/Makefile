@@ -1,8 +1,8 @@
 NAME = Polymorphism
 
 #files
-OBJS = main.o main.o Animal.o Dog.o Cat.o
-HEADERS = main.hpp Animal.hpp Dog.hpp Cat.hpp
+OBJS = main.o Animal.o Dog.o Cat.o
+HEADERS = Animal.hpp Dog.hpp Cat.hpp
 
 #compiler conf.
 CXX = c++
