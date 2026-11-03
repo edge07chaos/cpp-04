@@ -26,7 +26,8 @@ std::string Animal::getType(void) const
 	return this->type;
 }
 
-void Animal::makeSound(void) const
-{
-	std::cout << "Animal makes a very generic sound" << std::endl;
-}
+// don't need to be implemented, since it is pure virtual
+// void Animal::makeSound(void) const
+// {
+// 	std::cout << "Animal makes a very generic sound" << std::endl;
+// }
