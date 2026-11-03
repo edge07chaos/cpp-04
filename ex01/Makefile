@@ -1,9 +1,9 @@
-NAME = Polymorphism
+NAME = Brain
 
 #files
  
-OBJS = main.o Animal.o Dog.o Cat.o WrongCat.o WrongAnimal.o
-HEADERS = Animal.hpp Dog.hpp Cat.hpp WrongCat.hpp WrongAnimal.hpp
+OBJS = main.o Animal.o Dog.o Cat.o WrongCat.o WrongAnimal.o Brain.o
+HEADERS = Animal.hpp Dog.hpp Cat.hpp WrongCat.hpp WrongAnimal.hpp Brain.hpp
 
 #compiler conf.
 CXX = c++
