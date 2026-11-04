@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Character.hpp"
 
 Character::Character() : name("")
