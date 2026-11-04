@@ -27,6 +27,7 @@ AMateria &AMateria::operator=(const AMateria &obj)
 	LOG("AMateria Copy assignment operator called");
 	// -- an Ice/Cure (or other material) is always an Ice/Cure
 	// if (this != &obj) this->type = obj.type;
+	(void)obj;
 	return *this;
 }
 
