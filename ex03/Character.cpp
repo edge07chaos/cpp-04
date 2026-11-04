@@ -39,7 +39,6 @@ Character &Character::operator=(const Character &obj)
 	LOG("Character Copy assignment operator called");
 	if (this != &obj)
 	{
-		{
 			this->name = obj.name;
 			for (int i = 0; i < 4; i++)
 			{
@@ -48,7 +47,6 @@ Character &Character::operator=(const Character &obj)
 					this->inventory[i] = obj.inventory[i]->clone();
 				else
 					this->inventory[i] = NULL;
-			}
 		}
 	}
 	return *this;

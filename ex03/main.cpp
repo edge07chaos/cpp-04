@@ -127,8 +127,6 @@ static void testPolymorphism()
 	delete iceClone2;
 	delete cure;
 	delete cureClone;
-
-	// AMateria x;  // <- must NOT compile (abstract class). Test by hand.
 }
 
 static void testMateriaSource()
