@@ -1,5 +1,4 @@
-#ifndef A_MATERIA_HPP
-#define A_MATERIA_HPP
+#pragma once
 
 #include <string>
 #include "ICharacter.hpp"
@@ -11,7 +10,7 @@ protected:
 
 public:
 	AMateria();
-	~AMateria();
+	virtual ~AMateria();
 	AMateria(const AMateria &obj);
 	AMateria(std::string const &type);
 	AMateria &operator=(const AMateria &obj);
@@ -20,4 +19,3 @@ public:
 	virtual AMateria *clone() const = 0;
 	virtual void use(ICharacter &target);
 };
-#endif

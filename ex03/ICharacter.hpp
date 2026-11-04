@@ -1,5 +1,4 @@
-#ifndef I_CHARACTER_HPP
-#define I_CHARACTER_HPP
+#pragma once
 
 class ICharacter
 {
@@ -10,5 +9,3 @@ public:
 	virtual void unequip(int idx) = 0;
 	virtual void use(int idx, ICharacter &target) = 0;
 };
-
-#endif

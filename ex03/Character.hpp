@@ -1,7 +1,4 @@
-#ifndef CHARACTER_HPP
-#define CHARACTER_HPP
-
-#include <iostream>
+#pragma once
 #include "AMateria.hpp"
 
 class Character : public ICharacter
@@ -22,5 +19,3 @@ public:
 	virtual void unequip(int idx);
 	virtual void use(int idx, ICharacter &target);
 };
-
-#endif
