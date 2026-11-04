@@ -2,9 +2,8 @@
 #include <iostream>
 #include "Logging.hpp"
 
-Ice::Ice() : AMateria()
+Ice::Ice() : AMateria("ice")
 {
-	this->type = "ice";
 	LOG("Ice Default constructor called");
 }
 

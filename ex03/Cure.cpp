@@ -2,9 +2,8 @@
 #include <iostream>
 #include "Logging.hpp"
 
-Cure::Cure() : AMateria()
+Cure::Cure() : AMateria("cure")
 {
-	this->type = "cure";
 	LOG("Cure Default constructor called");
 }
 
