@@ -1,7 +1,7 @@
 #ifndef LOGGING_HPP
 #define LOGGING_HPP
 
-#ifdef DEBUG_MSG
+#ifdef DBG
     #include <iostream>
     #define LOG(msg) std::cout << msg << std::endl
 #else
