@@ -1,23 +1,24 @@
 #include <iostream>
+#include "Logging.hpp"
 #include "MateriaSource.hpp"
 
 MateriaSource::MateriaSource()
 {
-	std::cout << "MateriaSource Default constructor called" << std::endl;
+	LOG("MateriaSource Default constructor called");
 	for (int i = 0; i < 4; i++)
 		this->slot[i] = NULL;
 }
 
 MateriaSource::~MateriaSource()
 {
-	std::cout << "MateriaSource Destructor called" << std::endl;
+	LOG("MateriaSource Destructor called");
 	for (int i = 0; i < 4; i++)
 		delete this->slot[i];
 }
 
 MateriaSource::MateriaSource(const MateriaSource &obj)
 {
-	std::cout << "MateriaSource Copy constructor called" << std::endl;
+	LOG("MateriaSource Copy constructor called");
 	for (int i = 0; i < 4; i++)
 	{
 		if (obj.slot[i])
@@ -29,7 +30,7 @@ MateriaSource::MateriaSource(const MateriaSource &obj)
 
 MateriaSource &MateriaSource::operator=(const MateriaSource &obj)
 {
-	std::cout << "MateriaSource Copy assignment operator called" << std::endl;
+	LOG("MateriaSource Copy assignment operator called");
 	if (this != &obj)
 	{
 		for (int i = 0; i < 4; i++)

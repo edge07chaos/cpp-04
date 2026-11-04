@@ -1,27 +1,28 @@
 #include "Cure.hpp"
 #include <iostream>
+#include "Logging.hpp"
 
 Cure::Cure() : AMateria()
 {
 	this->type = "cure";
-	std::cout << "Cure Default constructor called" << std::endl;
+	LOG("Cure Default constructor called");
 }
 
 Cure::~Cure()
 {
-	std::cout << "Cure Destructor called" << std::endl;
+	LOG("Cure Destructor called");
 }
 
 Cure::Cure(const Cure &obj) : AMateria(obj)
 {
-	std::cout << "Cure Copy constructor called" << std::endl;
+	LOG("Cure Copy constructor called");
 }
 
 // Cure(std::string const &type);
 
 Cure &Cure::operator=(const Cure &obj)
 {
-	std::cout << "AMateria Copy assignment operator called" << std::endl;
+	LOG("Cure Copy assignment operator called");
 	if (this != &obj)
 		AMateria::operator=(obj);
 	return *this;
@@ -35,5 +36,5 @@ AMateria *Cure::clone() const
 
 void Cure::use(ICharacter &target)
 {
-	std::cout << "* heals " << target.getName() << " ’s wounds *" << std::endl;
+	std::cout << "* heals " << target.getName() << "'s wounds *" << std::endl;
 }

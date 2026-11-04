@@ -1,23 +1,23 @@
-#include <iostream>
+#include "Logging.hpp"
 #include "Character.hpp"
 
 Character::Character() : name("")
 {
-	std::cout << "Character Default constructor called" << std::endl;
+	LOG("Character Default constructor called");
 	for (int i = 0; i < 4; i++)
 		this->inventory[i] = NULL;
 }
 
 Character::~Character()
 {
-	std::cout << "Character Destructor called" << std::endl;
+	LOG("Character Destructor called");
 	for (int i = 0; i < 4; i++)
 		delete this->inventory[i];
 }
 
 Character::Character(const std::string &name) : name(name)
 {
-	std::cout << "Character parameterized constructor called" << std::endl;
+	LOG("Character parameterized constructor called");
 	for (int i = 0; i < 4; i++)
 		this->inventory[i] = NULL;
 }
@@ -31,12 +31,12 @@ Character::Character(const Character &obj) : name(obj.name)
 		else
 			this->inventory[i] = NULL;
 	}
-	std::cout << "Character Copy constructor called" << std::endl;
+	LOG("Character Copy constructor called");
 }
 
 Character &Character::operator=(const Character &obj)
 {
-	std::cout << "Character Copy assignment operator called" << std::endl;
+	LOG("Character Copy assignment operator called");
 	if (this != &obj)
 	{
 		{

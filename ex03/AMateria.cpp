@@ -1,26 +1,27 @@
 #include <iostream>
+#include "Logging.hpp"
 #include "AMateria.hpp"
 
 AMateria::AMateria() : type("Default") {
-		std::cout << "AMateria Default constructor called" << std::endl;
+		LOG("AMateria Default constructor called");
 }
 
 	AMateria::~AMateria() {
-	std::cout << "AMateria Destructor called" << std::endl;
+	LOG("AMateria Destructor called");
 
 	}
 
 	AMateria::AMateria(const AMateria &obj): type(obj.type) {
-		std::cout << "AMateria Copy constructor called" << std::endl;
+		LOG("AMateria Copy constructor called");
 	}
 
 	AMateria::AMateria(std::string const &type): type(type) {
-		std::cout << "AMateria parameterized constructor called" << std::endl;
+		LOG("AMateria parameterized constructor called");
 
 	}
 
 	AMateria& AMateria::operator=(const AMateria &obj) {
-		std::cout << "AMateria Copy assignment operator called" << std::endl;
+		LOG("AMateria Copy assignment operator called");
 		if (this != &obj)
 			this->type = obj.type;
 		return *this;

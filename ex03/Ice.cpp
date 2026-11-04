@@ -1,27 +1,28 @@
 #include "Ice.hpp"
 #include <iostream>
+#include "Logging.hpp"
 
 Ice::Ice() : AMateria()
 {
 	this->type = "ice";
-	std::cout << "Ice Default constructor called" << std::endl;
+	LOG("Ice Default constructor called");
 }
 
 Ice::~Ice()
 {
-	std::cout << "Ice Destructor called" << std::endl;
+	LOG("Ice Destructor called");
 }
 
 Ice::Ice(const Ice &obj) : AMateria(obj)
 {
-	std::cout << "Ice Copy constructor called" << std::endl;
+	LOG("Ice Copy constructor called");
 }
 
 // Ice(std::string const &type);
 
 Ice &Ice::operator=(const Ice &obj)
 {
-	std::cout << "AMateria Copy assignment operator called" << std::endl;
+	LOG("Ice Copy assignment operator called");
 	if (this != &obj)
 		AMateria::operator=(obj);
 	return *this;
