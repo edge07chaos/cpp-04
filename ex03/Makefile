@@ -1,9 +1,8 @@
 NAME = Interface
 
 #files
- 
-OBJS = main.o AMateria.o ICharacter.o Ice.o Cure.o
-HEADERS = AMateria.hpp ICharacter.hpp Ice.hpp Cure.hpp
+OBJS = AMateria.o Cure.o MateriaSource.o Character.o Ice.o main.o
+HEADERS = ICharacter.hpp AMateria.hpp Cure.hpp IMateriaSource.hpp MateriaSource.hpp Character.hpp Ice.hpp
 
 #compiler conf.
 CXX = c++
