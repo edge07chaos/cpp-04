@@ -7,7 +7,6 @@ public:
 	Cure();
 	~Cure();
 	Cure(const Cure &obj);
-	// Cure(std::string const &type);
 	Cure &operator=(const Cure &obj);
 	virtual AMateria *clone() const;
 	virtual void use(ICharacter &target);

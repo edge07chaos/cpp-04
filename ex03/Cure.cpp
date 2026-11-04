@@ -17,8 +17,6 @@ Cure::Cure(const Cure &obj) : AMateria(obj)
 	LOG("Cure Copy constructor called");
 }
 
-// Cure(std::string const &type);
-
 Cure &Cure::operator=(const Cure &obj)
 {
 	LOG("Cure Copy assignment operator called");

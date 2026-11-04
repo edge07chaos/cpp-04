@@ -17,8 +17,6 @@ Ice::Ice(const Ice &obj) : AMateria(obj)
 	LOG("Ice Copy constructor called");
 }
 
-// Ice(std::string const &type);
-
 Ice &Ice::operator=(const Ice &obj)
 {
 	LOG("Ice Copy assignment operator called");
