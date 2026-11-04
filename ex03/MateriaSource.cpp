@@ -61,12 +61,15 @@ void MateriaSource::learnMateria(AMateria *m)
 
 AMateria *MateriaSource::createMateria(std::string const &type)
 {
-	if (type != "ice" && type != "cure")
-		return 0;
-	AMateria *tmp;
-	for (int i =0; i<4;i++) {
-		tmp = this->slot[i];
-		if (tmp && tmp->getType() == type)
-			return tmp->clone();
+	if (type == "ice" || type == "cure")
+	{
+		AMateria *tmp;
+		for (int i = 0; i < 4; i++)
+		{
+			tmp = this->slot[i];
+			if (tmp && tmp->getType() == type)
+				return tmp->clone();
+		}
 	}
+	return 0;
 }
