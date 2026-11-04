@@ -31,6 +31,7 @@ AMateria::AMateria() : type("Default") {
 	}
 
 	// virtual AMateria *clone() const = 0;
+
 	void AMateria::use(ICharacter &target) {
-		
+			std::cout << "* generic usage of AMateria at " << target.getName() << " *" << std::endl;
 	}
