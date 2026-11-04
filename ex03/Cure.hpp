@@ -5,7 +5,7 @@ class Cure : public AMateria
 {
 public:
 	Cure();
-	~Cure();
+	virtual ~Cure();
 	Cure(const Cure &obj);
 	Cure &operator=(const Cure &obj);
 	virtual AMateria *clone() const;
